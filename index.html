@@ -19,58 +19,15 @@
   </header>
 
   <main>
-    <!-- Panel izquierdo: esquema -->
     <div class="left-panel">
-      <div class="schematic-container" id="schematic-container">
-        <!-- Sección 1 -->
-        <section id="section1" class="section active">
-          <img src="img/1/esquema1.png" alt="Esquema 1" class="schematic">
-          <button class="point-btn" style="top: 30%; left: 40%;"
-                  data-media="img/1/foto1.jpg"
-                  data-desc="img/1/foto1.txt">1</button>
-          <button class="point-btn" style="top: 50%; left: 60%;"
-                  data-media="media/1/video1.mp4"
-                  data-desc="media/1/video1.txt">2</button>
-        </section>
-
-        <!-- Sección 2 -->
-        <section id="section2" class="section hidden">
-          <img src="img/2/esquema2.png" alt="Esquema 2" class="schematic">
-          <button class="point-btn" style="top: 40%; left: 30%;"
-                  data-media="img/2/foto2.jpg"
-                  data-desc="img/2/foto2.txt">1</button>
-          <button class="point-btn" style="top: 60%; left: 50%;"
-                  data-media="media/2/video2.mp4"
-                  data-desc="media/2/video2.txt">2</button>
-        </section>
-
-        <!-- Sección 3 -->
-        <section id="section3" class="section hidden">
-          <img src="img/3/esquema3.png" alt="Esquema 3" class="schematic">
-          <button class="point-btn" style="top: 35%; left: 45%;"
-                  data-media="img/3/foto3.jpg"
-                  data-desc="img/3/foto3.txt">1</button>
-        </section>
-
-        <!-- Sección 4 -->
-        <section id="section4" class="section hidden">
-          <img src="img/4/esquema4.png" alt="Esquema 4" class="schematic">
-          <button class="point-btn" style="top: 25%; left: 55%;"
-                  data-media="img/4/foto4.jpg"
-                  data-desc="img/4/foto4.txt">1</button>
-        </section>
-
-        <!-- Sección 5 -->
-        <section id="section5" class="section hidden">
-          <img src="img/5/esquema5.png" alt="Esquema 5" class="schematic">
-          <button class="point-btn" style="top: 50%; left: 40%;"
-                  data-media="img/5/foto5.jpg"
-                  data-desc="img/5/foto5.txt">1</button>
-        </section>
+      <div class="schematic-container">
+        <img id="schematic-img" src="img/1/esquema1.png" alt="Esquema" class="schematic">
+        <div id="points-container">
+          <!-- botones de puntos dinámicos -->
+        </div>
       </div>
     </div>
 
-    <!-- Panel derecho: multimedia y descripción -->
     <div class="right-panel">
       <div class="viewer">
         <div class="media-container" id="media-container"></div>

@@ -1,107 +1,96 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const sectionButtons = document.querySelectorAll("nav#section-nav button");
-  const sections = document.querySelectorAll(".section");
+  const schematicImg = document.getElementById("schematic-img");
+  const pointsContainer = document.getElementById("points-container");
+  const mediaContainer = document.getElementById("media-container");
+  const description = document.getElementById("description");
 
-  // Crear botones desde data.js
-  sections.forEach(section => {
-    const secId = section.id.replace("section", "");
-    const container = section.querySelector(".schematic-left");
-    if (sectionsData[secId]) {
-      sectionsData[secId].forEach(point => {
-        const btn = document.createElement("button");
-        btn.classList.add("point-btn");
-        btn.style.top = point.top + "%";
-        btn.style.left = point.left + "%";
-        btn.dataset.media = point.media;
-        btn.textContent = point.label;
-        container.appendChild(btn);
-      });
+  const sections = {
+    1: [
+      { top: "30%", left: "40%", media: "img/1/foto1.jpg", desc: "img/1/foto1.txt" },
+      { top: "50%", left: "60%", media: "media/1/video1.mp4", desc: "media/1/video1.txt" }
+    ],
+    2: [
+      { top: "40%", left: "30%", media: "img/2/foto2.jpg", desc: "img/2/foto2.txt" },
+      { top: "60%", left: "50%", media: "media/2/video2.mp4", desc: "media/2/video2.txt" }
+    ],
+    3: [
+      { top: "35%", left: "45%", media: "img/3/foto3.jpg", desc: "img/3/foto3.txt" }
+    ],
+    4: [
+      { top: "25%", left: "55%", media: "img/4/foto4.jpg", desc: "img/4/foto4.txt" }
+    ],
+    5: [
+      { top: "50%", left: "40%", media: "img/5/foto5.jpg", desc: "img/5/foto5.txt" }
+    ]
+  };
+
+  // Cambiar de sección
+  document.querySelectorAll("#section-nav button").forEach(btn => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll("#section-nav button").forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      const sec = btn.dataset.section;
+      loadSection(sec);
+    });
+  });
+
+  // Cargar sección
+  function loadSection(sectionNum) {
+    const secData = sections[sectionNum];
+    if (!secData) return;
+
+    schematicImg.src = `img/${sectionNum}/esquema${sectionNum}.png`;
+
+    pointsContainer.innerHTML = "";
+    secData.forEach((p, i) => {
+      const btn = document.createElement("button");
+      btn.classList.add("point-btn");
+      btn.textContent = i + 1;
+      btn.style.top = p.top;
+      btn.style.left = p.left;
+      btn.dataset.media = p.media;
+      btn.dataset.desc = p.desc;
+      btn.addEventListener("click", () => loadPoint(p));
+      pointsContainer.appendChild(btn);
+    });
+
+    // Reset panel derecho
+    mediaContainer.innerHTML = "";
+    description.textContent = "Selecciona un punto del esquema.";
+  }
+
+  // Cargar punto
+  function loadPoint(p) {
+    mediaContainer.innerHTML = "";
+    description.textContent = "Cargando descripción...";
+
+    // Detener video previo
+    document.querySelectorAll("video").forEach(v => v.pause());
+
+    // Cargar media
+    if (p.media.endsWith(".mp4")) {
+      const video = document.createElement("video");
+      video.src = p.media;
+      video.controls = true;
+      video.autoplay = true;
+      mediaContainer.appendChild(video);
+    } else {
+      const img = document.createElement("img");
+      img.src = p.media;
+      mediaContainer.appendChild(img);
     }
-  });
 
-  activateSection(1);
-
-  // --- Función para activar sección ---
-  function activateSection(target) {
-    // Pausar vídeos activos
-    document.querySelectorAll("video").forEach(v => {
-      v.pause();
-      v.currentTime = 0;
-    });
-
-    sections.forEach(sec => sec.classList.add("hidden"));
-    const section = document.getElementById(`section${target}`);
-    section.classList.remove("hidden");
-
-    sectionButtons.forEach(b => b.classList.remove("active"));
-    document.querySelector(`nav#section-nav button[data-section="${target}"]`).classList.add("active");
-
-    const viewer = section.querySelector(".schematic-right .media-container");
-    const desc = section.querySelector(".schematic-left .description");
-    viewer.innerHTML = "";
-    desc.textContent = "Selecciona un punto para ver la información.";
-
-    attachPointEvents(section);
+    // Cargar texto
+    fetch(p.desc)
+      .then(res => res.ok ? res.text() : Promise.reject("no encontrado"))
+      .then(txt => {
+        description.textContent = txt.trim();
+      })
+      .catch(() => {
+        description.textContent = "Sin descripción disponible.";
+      });
   }
 
-  // --- Eventos para cada punto ---
-  function attachPointEvents(section) {
-    const points = section.querySelectorAll(".point-btn");
-    const viewer = section.querySelector(".schematic-right .media-container");
-    const desc = section.querySelector(".schematic-left .description");
-
-    points.forEach(point => {
-      point.onclick = () => {
-        const media = point.dataset.media;
-        viewer.innerHTML = "";
-
-        if (media.endsWith(".mp4")) {
-          const video = document.createElement("video");
-          video.src = media;
-          video.controls = true;
-          video.autoplay = true;
-          viewer.appendChild(video);
-        } else {
-          const img = document.createElement("img");
-          img.src = media;
-          viewer.appendChild(img);
-        }
-
-        // Leer el archivo .txt con el mismo nombre
-        const txtPath = media.replace(/\.(jpg|png|mp4)$/i, ".txt");
-        fetch(txtPath)
-          .then(res => {
-            if (!res.ok) throw new Error("No encontrado");
-            return res.text();
-          })
-          .then(text => {
-            desc.innerHTML = `<div class="desc-card">${text.trim()}</div>`;
-          })
-          .catch(() => {
-            desc.innerHTML = `<div class="desc-card">Sin descripción disponible.</div>`;
-          });
-      };
-    });
-  }
-
-  // Redimensionamiento de puntos
-  window.addEventListener("resize", () => {
-    const activeSection = document.querySelector(".section:not(.hidden)");
-    if (activeSection) adjustPoints(activeSection);
-  });
-
-  function adjustPoints(section) {
-    const points = section.querySelectorAll(".point-btn");
-    points.forEach(p => {
-      const topPct = parseFloat(p.style.top);
-      const leftPct = parseFloat(p.style.left);
-      p.style.top = `${topPct}%`;
-      p.style.left = `${leftPct}%`;
-    });
-  }
-
-  // --- Botones de navegación ---
-  sectionButtons.forEach(btn =>
-    btn.addEventListener("click", () => activateSection(btn.dataset.section))
-  );
+  // Iniciar en sección 1
+  loadSection(1);
 });
