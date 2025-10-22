@@ -89,11 +89,12 @@ document.addEventListener("DOMContentLoaded", () => {
     fetch(p.desc)
       .then(res => res.ok ? res.text() : Promise.reject("no encontrado"))
       .then(txt => {
-        description.textContent = txt.trim();
+        description.innerHTML = txt.trim().replace(/\n/g, "<br>");
       })
       .catch(() => {
         description.textContent = "Sin descripción disponible.";
       });
+
   }
 
   // Iniciar en sección 1
