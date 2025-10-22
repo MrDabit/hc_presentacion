@@ -84,7 +84,12 @@ document.addEventListener("DOMContentLoaded", () => {
     fetch(p.desc)
       .then(res => res.ok ? res.text() : Promise.reject("no encontrado"))
       .then(txt => {
-        description.textContent = txt.trim();
+       description.innerHTML = `
+        <div class="description-card">
+          <h3>Descripción del punto</h3>
+          <p>${txt.trim()}</p>
+        </div>
+      `;
       })
       .catch(() => {
         description.textContent = "Sin descripción disponible.";
