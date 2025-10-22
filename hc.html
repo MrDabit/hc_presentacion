@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Esquema Interactivo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Esquema Interactivo</h1>
+    <nav id="section-nav">
+      <button data-section="1">Sección 1</button>
+      <button data-section="2">Sección 2</button>
+      <button data-section="3">Sección 3</button>
+      <button data-section="4">Sección 4</button>
+      <button data-section="5">Sección 5</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Sección 1 -->
+    <section id="section1" class="section active">
+      <div class="schematic-container">
+        <img src="img/esquema1.jpg" alt="Esquema 1" class="schematic">
+        <button class="point-btn" style="top: 30%; left: 40%;" 
+                data-media="img/foto1.jpg" 
+                data-desc="Este es el primer punto de interés">1</button>
+        <button class="point-btn" style="top: 50%; left: 60%;" 
+                data-media="media/video1.mp4" 
+                data-desc="Vídeo que muestra el segundo punto">2</button>
+      </div>
+      <div class="viewer">
+        <div class="media-container"></div>
+        <div class="description"></div>
+      </div>
+    </section>
+
+    <!-- Sección 2 -->
+    <section id="section2" class="section hidden">
+      <div class="schematic-container">
+        <img src="img/esquema2.jpg" alt="Esquema 2" class="schematic">
+        <button class="point-btn" style="top: 40%; left: 30%;" 
+                data-media="img/foto2.jpg" 
+                data-desc="Descripción del primer punto de la sección 2">1</button>
+        <button class="point-btn" style="top: 60%; left: 50%;" 
+                data-media="media/video2.mp4" 
+                data-desc="Vídeo del segundo punto de la sección 2">2</button>
+      </div>
+      <div class="viewer">
+        <div class="media-container"></div>
+        <div class="description"></div>
+      </div>
+    </section>
+
+    <!-- Sección 3 -->
+    <section id="section3" class="section hidden">
+      <div class="schematic-container">
+        <img src="img/esquema3.jpg" alt="Esquema 3" class="schematic">
+        <button class="point-btn" style="top: 35%; left: 45%;" 
+                data-media="img/foto3.jpg" 
+                data-desc="Punto principal de la sección 3">1</button>
+      </div>
+      <div class="viewer">
+        <div class="media-container"></div>
+        <div class="description"></div>
+      </div>
+    </section>
+
+    <!-- Sección 4 -->
+    <section id="section4" class="section hidden">
+      <div class="schematic-container">
+        <img src="img/esquema4.jpg" alt="Esquema 4" class="schematic">
+        <button class="point-btn" style="top: 25%; left: 55%;" 
+                data-media="img/foto4.jpg" 
+                data-desc="Primer punto de la sección 4">1</button>
+      </div>
+      <div class="viewer">
+        <div class="media-container"></div>
+        <div class="description"></div>
+      </div>
+    </section>
+
+    <!-- Sección 5 -->
+    <section id="section5" class="section hidden">
+      <div class="schematic-container">
+        <img src="img/esquema5.jpg" alt="Esquema 5" class="schematic">
+        <button class="point-btn" style="top: 50%; left: 40%;" 
+                data-media="img/foto5.jpg" 
+                data-desc="Primer punto de la sección 5">1</button>
+      </div>
+      <div class="viewer">
+        <div class="media-container"></div>
+        <div class="description"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Proyecto Esquema Interactivo</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
