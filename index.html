@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Esquema Interactivo</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
     <h1>Esquema Interactivo</h1>
     <nav id="section-nav">
-      <button data-section="1">Sección 1</button>
+      <button data-section="1" class="active">Sección 1</button>
       <button data-section="2">Sección 2</button>
       <button data-section="3">Sección 3</button>
       <button data-section="4">Sección 4</button>
@@ -19,73 +19,70 @@
   </header>
 
   <main>
-    <!-- Las secciones se generan con contenedores, los botones se crean con JS -->
-    <section id="section1" class="section hidden">
-      <div class="schematic-container">
-        <div class="schematic-left">
+    <!-- Panel izquierdo: esquema -->
+    <div class="left-panel">
+      <div class="schematic-container" id="schematic-container">
+        <!-- Sección 1 -->
+        <section id="section1" class="section active">
           <img src="img/1/esquema1.png" alt="Esquema 1" class="schematic">
-          <div class="description">Selecciona un punto para ver la información.</div>
-        </div>
-        <div class="schematic-right">
-          <div class="media-container"></div>
-        </div>
-      </div>
-    </section>
+          <button class="point-btn" style="top: 30%; left: 40%;"
+                  data-media="img/1/foto1.jpg"
+                  data-desc="img/1/foto1.txt">1</button>
+          <button class="point-btn" style="top: 50%; left: 60%;"
+                  data-media="media/1/video1.mp4"
+                  data-desc="media/1/video1.txt">2</button>
+        </section>
 
-    <section id="section2" class="section hidden">
-      <div class="schematic-container">
-        <div class="schematic-left">
+        <!-- Sección 2 -->
+        <section id="section2" class="section hidden">
           <img src="img/2/esquema2.png" alt="Esquema 2" class="schematic">
-          <div class="description">Selecciona un punto para ver la información.</div>
-        </div>
-        <div class="schematic-right">
-          <div class="media-container"></div>
-        </div>
-      </div>
-    </section>
+          <button class="point-btn" style="top: 40%; left: 30%;"
+                  data-media="img/2/foto2.jpg"
+                  data-desc="img/2/foto2.txt">1</button>
+          <button class="point-btn" style="top: 60%; left: 50%;"
+                  data-media="media/2/video2.mp4"
+                  data-desc="media/2/video2.txt">2</button>
+        </section>
 
-    <section id="section3" class="section hidden">
-      <div class="schematic-container">
-        <div class="schematic-left">
+        <!-- Sección 3 -->
+        <section id="section3" class="section hidden">
           <img src="img/3/esquema3.png" alt="Esquema 3" class="schematic">
-          <div class="description">Selecciona un punto para ver la información.</div>
-        </div>
-        <div class="schematic-right">
-          <div class="media-container"></div>
-        </div>
-      </div>
-    </section>
+          <button class="point-btn" style="top: 35%; left: 45%;"
+                  data-media="img/3/foto3.jpg"
+                  data-desc="img/3/foto3.txt">1</button>
+        </section>
 
-    <section id="section4" class="section hidden">
-      <div class="schematic-container">
-        <div class="schematic-left">
+        <!-- Sección 4 -->
+        <section id="section4" class="section hidden">
           <img src="img/4/esquema4.png" alt="Esquema 4" class="schematic">
-          <div class="description">Selecciona un punto para ver la información.</div>
-        </div>
-        <div class="schematic-right">
-          <div class="media-container"></div>
-        </div>
-      </div>
-    </section>
+          <button class="point-btn" style="top: 25%; left: 55%;"
+                  data-media="img/4/foto4.jpg"
+                  data-desc="img/4/foto4.txt">1</button>
+        </section>
 
-    <section id="section5" class="section hidden">
-      <div class="schematic-container">
-        <div class="schematic-left">
+        <!-- Sección 5 -->
+        <section id="section5" class="section hidden">
           <img src="img/5/esquema5.png" alt="Esquema 5" class="schematic">
-          <div class="description">Selecciona un punto para ver la información.</div>
-        </div>
-        <div class="schematic-right">
-          <div class="media-container"></div>
-        </div>
+          <button class="point-btn" style="top: 50%; left: 40%;"
+                  data-media="img/5/foto5.jpg"
+                  data-desc="img/5/foto5.txt">1</button>
+        </section>
       </div>
-    </section>
+    </div>
+
+    <!-- Panel derecho: multimedia y descripción -->
+    <div class="right-panel">
+      <div class="viewer">
+        <div class="media-container" id="media-container"></div>
+        <div class="description" id="description">Selecciona un punto del esquema.</div>
+      </div>
+    </div>
   </main>
 
   <footer>
     <p>© 2025 Proyecto Esquema Interactivo</p>
   </footer>
 
-  <script src="data.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
