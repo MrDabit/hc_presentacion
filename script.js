@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
       pointsContainer.appendChild(btn);
     });
 
-    // Reset panel derecho
+    // Reset panel derecho y descripción
     mediaContainer.innerHTML = "";
     description.textContent = "Selecciona un punto del esquema.";
   }
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
     mediaContainer.innerHTML = "";
     description.textContent = "Cargando descripción...";
 
-    // Detener video previo
+    // Detener vídeo previo
     document.querySelectorAll("video").forEach(v => v.pause());
 
     // Cargar media
@@ -84,12 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
     fetch(p.desc)
       .then(res => res.ok ? res.text() : Promise.reject("no encontrado"))
       .then(txt => {
-       description.innerHTML = `
-        <div class="description-card">
-          <h3>Descripción del punto</h3>
-          <p>${txt.trim()}</p>
-        </div>
-      `;
+        description.textContent = txt.trim();
       })
       .catch(() => {
         description.textContent = "Sin descripción disponible.";
