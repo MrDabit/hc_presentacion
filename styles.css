@@ -8,7 +8,7 @@
 body {
   background: #f0f0f0;
   color: #333;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -41,40 +41,42 @@ nav#section-nav button.active {
   color: #fff;
 }
 
-/* Estructura principal en dos columnas */
 main {
   flex: 1;
-  display: flex;
-  flex-direction: row;
-  overflow: hidden;
+  display: grid;
+  grid-template-columns: 55% 45%;
+  gap: 1rem;
+  padding: 1rem;
+  height: calc(100vh - 160px); /* ocupa casi toda la pantalla */
 }
 
-/* Columna izquierda: esquema */
+/* PANEL IZQUIERDO */
 .left-panel {
-  width: 60%;
+  background: #fff;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  overflow: hidden;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  background: #e9eef3;
-  padding: 1rem;
-  position: relative;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .schematic-container {
   position: relative;
   width: 100%;
-  max-width: 1000px;
-  aspect-ratio: 16/9;
-  border: 2px solid #ccc;
-  border-radius: 8px;
-  background: #fff;
-  overflow: hidden;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .schematic-container img.schematic {
   width: 100%;
-  height: 100%;
+  height: auto;
+  max-height: 90vh;
+  border: 2px solid #ccc;
+  border-radius: 4px;
   object-fit: contain;
 }
 
@@ -92,47 +94,53 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.2s, background 0.2s;
 }
 
 .point-btn:hover {
   background: #005fa3;
-  transform: translate(-50%, -50%) scale(1.1);
 }
 
-/* Columna derecha: multimedia y descripción */
+/* PANEL DERECHO */
 .right-panel {
-  width: 40%;
-  background: #fff;
-  border-left: 2px solid #ccc;
   display: flex;
   flex-direction: column;
-  padding: 1rem;
-  overflow-y: auto;
+  justify-content: flex-start;
+  height: 100%;
 }
 
 .viewer {
   flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  overflow-y: auto;
 }
 
 .viewer .media-container img,
 .viewer .media-container video {
   width: 100%;
-  max-height: 400px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
+  max-height: 60vh;
   object-fit: contain;
+  border-radius: 6px;
+  margin-bottom: 1rem;
 }
 
 .viewer .description {
-  background: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 8px;
+  background: #f8f8f8;
   padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
   font-size: 1rem;
-  color: #333;
+  color: #444;
   line-height: 1.4;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* FOOTER */
+footer {
+  background: #0077cc;
+  color: #fff;
+  text-align: center;
+  padding: 0.5rem;
 }
