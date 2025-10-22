@@ -9,6 +9,12 @@ document.addEventListener("DOMContentLoaded", () => {
     btn.addEventListener("click", () => {
       const target = btn.getAttribute("data-section");
 
+      // Pausar todos los vídeos antes de cambiar
+      document.querySelectorAll(".viewer video").forEach(video => {
+      video.pause();
+      video.currentTime = 0; // opcional: reinicia al inicio
+      
+    });
       // Muestra solo la sección seleccionada
       sections.forEach(sec => {
         sec.classList.add("hidden");
