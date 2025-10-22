@@ -70,6 +70,7 @@ main {
   border-radius: 4px;
 }
 
+
 .point-btn {
   position: absolute;
   transform: translate(-50%, -50%);
@@ -89,6 +90,83 @@ main {
 .point-btn:hover {
   background: #005fa3;
 }
+
+.point-btn.danger {
+  width: 36px;
+  height: 36px;
+  background: transparent;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.point-btn.danger::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 18px solid transparent;
+  border-right: 18px solid transparent;
+  border-bottom: 36px solid #ffcc00;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.point-btn.danger span {
+  position: relative; /* dentro del botón real */
+  z-index: 2;
+  font-weight: bold;
+  color: black;
+  font-size: 14px;
+  pointer-events: none;
+}
+
+/* Botón globo azul (información) */
+.point-btn.info {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #3498db;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Botón ojo (visual) */
+.point-btn.visual {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #2ecc71;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;          /* tamaño del número */
+  display: flex;
+  align-items: center;
+  justify-content: center;  /* centra el span */
+  position: absolute;       /* para top/left */
+}
+
+.point-btn.visual::before {
+  content: "👁️";           /* emoji ojo */
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  z-index: 0;               /* detrás del número */
+}
+
+.point-btn.visual span {
+  position: relative;       /* sobre el botón */
+  z-index: 1;               /* encima del emoji */
+  font-weight: bold;
+  color: white;
+  font-size: 14px;
+  pointer-events: none;
+}
+
 
 /* Tarjeta descripción debajo del esquema */
 .left-panel .description {

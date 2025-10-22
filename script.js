@@ -6,8 +6,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const sections = {
     1: [
-      { top: "30%", left: "40%", media: "img/1/foto1.jpg", desc: "img/1/foto1.txt" },
-      { top: "50%", left: "60%", media: "media/1/video1.mp4", desc: "media/1/video1.txt" }
+      { top: "50%", left: "5%", media: "img/1/foto1.jpg", desc: "img/1/foto1.txt" , type:"visual"},
+      { top: "80%", left: "42%", media: "img/1/foto2.jpg", desc: "img/1/foto2.txt" , type:"visual"},
+      { top: "78%", left: "60%", media: "media/1/video1.mp4", desc: "media/1/video1.txt",type:"visual" }
+      
     ],
     2: [
       { top: "40%", left: "30%", media: "img/2/foto2.jpg", desc: "img/2/foto2.txt" },
@@ -44,8 +46,11 @@ document.addEventListener("DOMContentLoaded", () => {
     pointsContainer.innerHTML = "";
     secData.forEach((p, i) => {
       const btn = document.createElement("button");
-      btn.classList.add("point-btn");
-      btn.textContent = i + 1;
+      btn.classList.add("point-btn", p.type);
+      //btn.textContent = i + 1;
+      const span = document.createElement("span");
+      span.textContent = i + 1;
+      btn.appendChild(span);
       btn.style.top = p.top;
       btn.style.left = p.left;
       btn.dataset.media = p.media;

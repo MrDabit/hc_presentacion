@@ -1,0 +1,3 @@
+Este video muestra el proceso de transporte a la salida de materiales. 
+El transporte una vez que se ha cortado el material se realiza mediante la preselección de las bancadas que deben mover y mediante un joystick en el pupitre.
+Tiene joystick individuales para los transportadores de rodillos y para los transportadores de cadenas transversales.
