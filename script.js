@@ -1,50 +1,66 @@
-// Navegación entre secciones
-const sectionButtons = document.querySelectorAll("#section-nav button");
-const sections = document.querySelectorAll(".section");
+// Espera a que el DOM cargue
+document.addEventListener("DOMContentLoaded", () => {
 
-sectionButtons.forEach(btn => {
-  btn.addEventListener("click", () => {
-    // Cambiar sección activa
-    const target = btn.dataset.section;
-    sections.forEach(sec => sec.classList.add("hidden"));
-    document.getElementById(`section${target}`).classList.remove("hidden");
+  // --- NAVEGACIÓN ENTRE SECCIONES ---
+  const sectionButtons = document.querySelectorAll("nav#section-nav button");
+  const sections = document.querySelectorAll(".section");
 
-    // Resaltar botón activo
-    sectionButtons.forEach(b => b.classList.remove("active"));
-    btn.classList.add("active");
+  sectionButtons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const target = btn.getAttribute("data-section");
 
-    // Limpiar visor al cambiar de sección
-    const viewer = document.querySelector(`#section${target} .viewer .media-container`);
-    const desc = document.querySelector(`#section${target} .viewer .description`);
-    viewer.innerHTML = "";
-    desc.textContent = "";
+      // Muestra solo la sección seleccionada
+      sections.forEach(sec => {
+        sec.classList.add("hidden");
+      });
+      document.getElementById(`section${target}`).classList.remove("hidden");
+
+      // Actualiza el estilo del botón activo
+      sectionButtons.forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+
+      // Limpia visor al cambiar de sección
+      const viewer = document.getElementById(`section${target}`).querySelector(".viewer .media-container");
+      const desc = document.getElementById(`section${target}`).querySelector(".viewer .description");
+      viewer.innerHTML = "";
+      desc.textContent = "";
+    });
   });
-});
 
-// Función para mostrar contenido en el visor
-function showMedia(button) {
-  const mediaContainer = button.closest(".section").querySelector(".media-container");
-  const descContainer = button.closest(".section").querySelector(".description");
-  const media = button.dataset.media;
-  const desc = button.dataset.desc || "";
+  // --- VISOR DE PUNTOS ---
+  const allPoints = document.querySelectorAll(".point-btn");
+  allPoints.forEach(point => {
+    point.addEventListener("click", () => {
+      const media = point.getAttribute("data-media");
+      const descText = point.getAttribute("data-desc");
 
-  mediaContainer.innerHTML = "";
-  descContainer.textContent = desc;
+      // Encuentra el visor correspondiente
+      const section = point.closest(".section");
+      const viewer = section.querySelector(".viewer .media-container");
+      const desc = section.querySelector(".viewer .description");
 
-  if (media.endsWith(".mp4")) {
-    const video = document.createElement("video");
-    video.src = media;
-    video.controls = true;
-    mediaContainer.appendChild(video);
-  } else {
-    const img = document.createElement("img");
-    img.src = media;
-    mediaContainer.appendChild(img);
-  }
-}
+      viewer.innerHTML = ""; // Limpia contenido anterior
 
-// Añadir eventos a todos los botones de puntos
-const pointButtons = document.querySelectorAll(".point-btn");
-pointButtons.forEach(btn => {
-  btn.addEventListener("click", () => showMedia(btn));
+      if (media.endsWith(".mp4")) {
+        // Crear elemento video
+        const video = document.createElement("video");
+        video.src = media;
+        video.controls = true;
+        video.autoplay = true;
+        viewer.appendChild(video);
+      } else {
+        // Crear imagen
+        const img = document.createElement("img");
+        img.src = media;
+        viewer.appendChild(img);
+      }
+
+      // Muestra la descripción
+      desc.textContent = descText;
+    });
+  });
+
+  // --- OPCIONAL: Mostrar la primera sección por defecto ---
+  document.querySelector("nav#section-nav button").click();
+
 });
