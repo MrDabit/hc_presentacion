@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Analisis guridad hc</title>
-  <base href="./">
+  <title>Esquema Interactivo</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -20,79 +19,64 @@
   </header>
 
   <main>
-    <!-- Sección 1 -->
-    <section id="section1" class="section active">
+    <!-- Las secciones se generan con contenedores, los botones se crean con JS -->
+    <section id="section1" class="section hidden">
       <div class="schematic-container">
-        <img src="img/1/esquema1.png" alt="Esquema 1" class="schematic">
-        <button class="point-btn" style="top: 30%; left: 40%;" 
-                data-media="img/1/foto1.jpg" 
-                data-desc="Este es el primer punto de interés">1</button>
-        <button class="point-btn" style="top: 50%; left: 60%;" 
-                data-media="media/1/video1.mp4" 
-                data-desc="Vídeo que muestra el segundo punto">2</button>
-      </div>
-      <div class="viewer">
-        <div class="media-container"></div>
-        <div class="description"></div>
+        <div class="schematic-left">
+          <img src="img/1/esquema1.png" alt="Esquema 1" class="schematic">
+          <div class="description">Selecciona un punto para ver la información.</div>
+        </div>
+        <div class="schematic-right">
+          <div class="media-container"></div>
+        </div>
       </div>
     </section>
 
-    <!-- Sección 2 -->
     <section id="section2" class="section hidden">
       <div class="schematic-container">
-        <img src="img/2/esquema2.png" alt="Esquema 2" class="schematic">
-        <button class="point-btn" style="top: 40%; left: 30%;" 
-                data-media="img/2/foto2.jpg" 
-                data-desc="Descripción del primer punto de la sección 2">1</button>
-        <button class="point-btn" style="top: 60%; left: 50%;" 
-                data-media="media/2/video2.mp4" 
-                data-desc="Vídeo del segundo punto de la sección 2">2</button>
-      </div>
-      <div class="viewer">
-        <div class="media-container"></div>
-        <div class="description"></div>
+        <div class="schematic-left">
+          <img src="img/2/esquema2.png" alt="Esquema 2" class="schematic">
+          <div class="description">Selecciona un punto para ver la información.</div>
+        </div>
+        <div class="schematic-right">
+          <div class="media-container"></div>
+        </div>
       </div>
     </section>
 
-    <!-- Sección 3 -->
     <section id="section3" class="section hidden">
       <div class="schematic-container">
-        <img src="img/3/esquema3.png" alt="Esquema 3" class="schematic">
-        <button class="point-btn" style="top: 35%; left: 45%;" 
-                data-media="img/3/foto3.jpg" 
-                data-desc="Punto principal de la sección 3">1</button>
-      </div>
-      <div class="viewer">
-        <div class="media-container"></div>
-        <div class="description"></div>
+        <div class="schematic-left">
+          <img src="img/3/esquema3.png" alt="Esquema 3" class="schematic">
+          <div class="description">Selecciona un punto para ver la información.</div>
+        </div>
+        <div class="schematic-right">
+          <div class="media-container"></div>
+        </div>
       </div>
     </section>
 
-    <!-- Sección 4 -->
     <section id="section4" class="section hidden">
       <div class="schematic-container">
-        <img src="img/4/esquema4.png" alt="Esquema 4" class="schematic">
-        <button class="point-btn" style="top: 25%; left: 55%;" 
-                data-media="img/4/foto4.jpg" 
-                data-desc="Primer punto de la sección 4">1</button>
-      </div>
-      <div class="viewer">
-        <div class="media-container"></div>
-        <div class="description"></div>
+        <div class="schematic-left">
+          <img src="img/4/esquema4.png" alt="Esquema 4" class="schematic">
+          <div class="description">Selecciona un punto para ver la información.</div>
+        </div>
+        <div class="schematic-right">
+          <div class="media-container"></div>
+        </div>
       </div>
     </section>
 
-    <!-- Sección 5 -->
     <section id="section5" class="section hidden">
       <div class="schematic-container">
-        <img src="img/5/esquema5.png" alt="Esquema 5" class="schematic">
-        <button class="point-btn" style="top: 50%; left: 40%;" 
-                data-media="img/5/foto5.jpg" 
-                data-desc="Primer punto de la sección 5">1</button>
-      </div>
-      <div class="viewer">
-        <div class="media-container"></div>
-        <div class="description"></div>
+        <div class="schematic-left">
+          <img src="img/5/esquema5.png" alt="Esquema 5" class="schematic">
+          <div class="description">Selecciona un punto para ver la información.</div>
+        </div>
+        <div class="schematic-right">
+          <div class="media-container"></div>
+        </div>
       </div>
     </section>
   </main>
@@ -101,7 +85,7 @@
     <p>© 2025 Proyecto Esquema Interactivo</p>
   </footer>
 
+  <script src="data.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
-

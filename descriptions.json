@@ -1,0 +1,7 @@
+{
+  "1": { "1": "Este es el primer punto de interés", "2": "Vídeo que muestra el segundo punto" },
+  "2": { "1": "Descripción del primer punto de la sección 2", "2": "Vídeo del segundo punto de la sección 2" },
+  "3": { "1": "Punto principal de la sección 3" },
+  "4": { "1": "Primer punto de la sección 4" },
+  "5": { "1": "Primer punto de la sección 5" }
+}
