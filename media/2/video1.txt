@@ -1,0 +1,7 @@
+Paseo completo por la línea desde el lado de descarga de materiales. 
+Las máquinas están instaladas en el 2003, aunque salvo el transporte el resto era ya un retrofit de máquinas antiguas.
+El movimiento del transporte es manual mediante joystics, salvo una operación automática en los rodillos, una vez que ya los perfiles se han posicionado en la zona de referencia, los rodillos se mueven de manera automática para ir posicionando el perfil en las cotas donde se debe cortar, marcar o taladrar.
+
+Al final de la zona de descarga, existe una persiana que permite atravesar el muro.
+En la parte inferior del muro se ha realizado un taladro para que pase el haz de una barrera de luz monohaz.
+Actualmente ese sensor inferior no funciona y sólo la célula monohaz superior está en servicio.

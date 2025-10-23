@@ -1,0 +1,2 @@
+En la zona bajo la escalera del taladro, se puede observar que queda acceso libremente a una zona movil. 
+Esa es una zona movil del taladro, que aprieta mediante un cilindro hidráulico al material cuando está posicionado. Se puede acceder libremente a toda la torreta por lo que debería ser necesario cerrar ese acceso mediante un resguardo fijo.

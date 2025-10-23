@@ -1,0 +1,3 @@
+Esta imagen muestra parte del cuadro de control y potencia de la sierra.
+Podemos observar la presencia de relés de seguridad PILZ muy antiguos. 
+Aunque el montaje de la sierra es del 2003, esos equipos seguramente ya existían en el cuadro de control

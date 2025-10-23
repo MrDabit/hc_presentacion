@@ -1,0 +1,1 @@
+Esta imagen muestra una foto panorámica desde la entrada de la línea. Se observa desde el lado de referencia del material. La línea cero que sirve de referencia para que el material se arrastre por ella y se realicen las mediciones respecto a ese origen.
