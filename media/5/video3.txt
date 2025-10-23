@@ -1,0 +1,2 @@
+En este video observamos el proceso de transporte del material desde la entrada hacia las máquinas. 
+El perfil es transportado por las bancadas de rodillos automáticamente hasta que alcanza un sensor a la entrada del taladro. A partir de ahí el empujador va posicionando de manera automática el perfil a las cotas de las diferentes operaciones.]

@@ -1,0 +1,3 @@
+Paseo por el interior de la caseta de las máquinas.
+Vemos los accesos de entrada a la zona de taladrado y de salida desde la sierra a la zona de salida.
+

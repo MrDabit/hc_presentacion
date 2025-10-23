@@ -1,0 +1,2 @@
+Detalle de los relés de seguridad del taladro.
+En el control del taladro se incluye el transporte y el empujador, además de tener una interfaz con la sierra para que esta también pare.

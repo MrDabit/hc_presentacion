@@ -1,0 +1,2 @@
+Detalle de la columna con el emisor o receptor de las barreras de luz que protegen la zona de las máquinas. 
+Se ha montado pegado a la pared a una altura del haz más bajo de 400mm.

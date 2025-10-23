@@ -1,0 +1,3 @@
+Detalle de los relés de seguridad de la sierra.
+Un relé corresponde a los resguardos de las capotas que tapan las poleas de arrastre de la cinta.
+El otro relé se encarga de monitorizar la parada de emergencia.

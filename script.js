@@ -77,7 +77,16 @@ document.addEventListener("DOMContentLoaded", () => {
       { top: "95%", left: "85%", media: "img/4/foto10.jpg", desc: "img/4/foto10.txt", type:"info"}//17.Detalle de relés de seguridad en pintura
     ],
     5: [
-      { top: "50%", left: "40%", media: "img/5/foto5.jpg", desc: "img/5/foto5.txt" }
+      { top: "50%", left: "5%", media: "media/5/video1.mp4", desc: "media/5/video1.txt", type:"visual" },//1.Paseo desde la zona de entrada
+      { top: "60%", left: "50%", media: "media/5/video2.mp4", desc: "media/5/video2.txt", type:"visual" },//2.Paseo hacia la zona de salida
+      { top: "45%", left: "35%", media: "media/5/video3.mp4", desc: "media/5/video3.txt", type:"visual" },//3.Transporte y medición de perfiles
+      { top: "40%", left: "5%", media: "img/5/foto1.jpg", desc: "img/5/foto1.txt", type:"danger"},//4.Vista de zona de entrada Peligro
+      { top: "28%", left: "20%", media: "img/5/foto2.jpg", desc: "img/5/foto2.txt", type:"danger"},//5.Resguardo movil sin cierre ni enclavamiento
+      { top: "18%", left: "50%", media: "img/5/foto3.jpg", desc: "img/5/foto3.txt", type:"info"},//6.Barrera de luz zona máquinas 1
+      { top: "18%", left: "40%", media: "img/5/foto4.jpg", desc: "img/5/foto4.txt", type:"info"},//7.Barera de luz zona máquinas 2
+      { top: "90%", left: "85%", media: "img/5/foto5.jpg", desc: "img/5/foto5.txt", type:"info"},//8.Relés de seguridad en sierra
+      { top: "90%", left: "90%", media: "img/5/foto6.jpg", desc: "img/5/foto6.txt", type:"info"},//9.Relés de seguridad en taladro
+
     ]
   };
 
