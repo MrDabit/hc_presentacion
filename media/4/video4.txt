@@ -1,0 +1,4 @@
+Este video muestra el movimiento de los perfiles que se introducen en la línea de granallado y pintura.
+El transporte de rodillo es automático a esas velocidades. Se puede mover en manual también a una velocidad superior.
+El transporte transversal se realiza de manera completamente manual a través de unos joysticks y botones de preselección.
+La zona de la campa se maneja también desde la zona de los opeararios en la granalaldora y para tener visibilidad disponen de cámaras conectada a unos monitores donde los operarios pueden ver que es lo que están moviendo y la presencia de personas en esas bancadas.

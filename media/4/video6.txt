@@ -1,0 +1,5 @@
+El video 6 nos da un paseo desde la zona de la máquina de pintura, hasta la zona de salida de los materiales.
+Esta zona de salida también tiene 2 transportes transversales, uno que saca el material hacia la nave y otro que saca el material hacia la campa.
+El secador tiene una apertura que permite sacar materiales muy largos que superen la distancia hasta la pared del fondo.
+Los movimientos tanto de los rodillos como del transportador de cadenas del horno secador es automático o puede ser manual a una velocidad mayor.
+Los movimientos de las bancadas transversales es totalmente manual a través de joysticks que maneja el operario.

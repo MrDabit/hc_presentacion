@@ -1,0 +1,2 @@
+Esta imagen muestra los relés de seguridad de la máquina de granallado, en la que se incorpora el precalentador y el transporte del secador, también se incorpora el tren de rodillos y los transversales que alimentan y evacuan la línea. 
+Aparentemente un relé es para estas máquinas y el otro relé enviará la emergencia a la máquina de pintura para que haga una parada segura en caso de que se pulse una emergencia en cualquiera de las zonas de la instalación.

@@ -58,7 +58,23 @@ document.addEventListener("DOMContentLoaded", () => {
       { top: "45%", left: "37%", media: "img/3/foto12.jpg", desc: "img/3/foto12.txt" , type:"info"},//15.Detalle receptor barrera luz máquinas
     ],
     4: [
-      { top: "25%", left: "55%", media: "img/4/foto4.jpg", desc: "img/4/foto4.txt" }
+      { top: "50%", left: "95%", media: "media/4/video1.mp4", desc: "media/4/video1.txt", type:"visual" },//1.Paseo por el tren de rodillos de entrada
+      { top: "75%", left: "75%", media: "media/4/video2.mp4", desc: "media/4/video2.txt", type:"visual" },//2.Paseo por la zona de entrada de material 
+      { top: "40%", left: "62%", media: "media/4/video3.mp4", desc: "media/4/video3.txt", type:"visual" },//3.Paseo por la zona de entrada desde la campa
+      { top: "52%", left: "57%", media: "media/4/video4.mp4", desc: "media/4/video4.txt", type:"visual" },//4.Detalle de carga de material en la entrada y movimiento auto de rodillos
+      { top: "40%", left: "58%", media: "media/4/video5.mp4", desc: "media/4/video5.txt", type:"visual" },//5.Detalle de acceso desde la campa
+      { top: "73%", left: "47%", media: "media/4/video6.mp4", desc: "media/4/video6.txt", type:"visual" },//6.Paseo desde la zona de pintura en el lado del operario hasta la salida de material.
+      { top: "50%", left: "49%", media: "media/4/video7.mp4", desc: "media/4/video7.txt", type:"visual" },//7.Paseo desde el precalentador hasta el secado por la parte posterior
+      { top: "65%", left: "59%", media: "img/4/foto1.jpg", desc: "img/4/foto1.txt", type:"danger"},//8.Acceso a zona de precalentador desde entrada
+      { top: "65%", left: "55%", media: "img/4/foto2.jpg", desc: "img/4/foto2.txt", type:"danger"},//9.Acceso a precalentador y granalla desde zona intermedia
+      { top: "65%", left: "48%", media: "img/4/foto3.jpg", desc: "img/4/foto3.txt", type:"danger"},//10.Acceso a granalla y pintura en zona intermedia
+      { top: "70%", left: "50%", media: "img/4/foto4.jpg", desc: "img/4/foto4.txt", type:"danger"},//11. Posible acceso a partes móviles del módulo de cepillo desde escalera
+      { top: "65%", left: "30%", media: "img/4/foto5.jpg", desc: "img/4/foto5.txt", type:"danger"},//12. Acceso a transporte de cadenas 
+      { top: "30%", left: "5%", media: "img/4/foto6.jpg", desc: "img/4/foto6.txt", type:"info"},//13.Detalle de zona de salida desde campa
+      { top: "50%", left: "53%", media: "img/4/foto7.jpg", desc: "img/4/foto7.txt", type:"info"},//14.Detalle de zona de entrada desde muro de nave
+      { top: "50%", left: "35%", media: "img/4/foto8.jpg", desc: "img/4/foto8.txt", type:"info"},//15.Detalle de zona de salida desde muro de nave
+      { top: "95%", left: "80%", media: "img/4/foto9.jpg", desc: "img/4/foto9.txt", type:"info"},//16.Detalle relés de seguridad en granalladora
+      { top: "95%", left: "85%", media: "img/4/foto10.jpg", desc: "img/4/foto10.txt", type:"info"}//17.Detalle de relés de seguridad en pintura
     ],
     5: [
       { top: "50%", left: "40%", media: "img/5/foto5.jpg", desc: "img/5/foto5.txt" }

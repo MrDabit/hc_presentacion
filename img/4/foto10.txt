@@ -1,0 +1,3 @@
+Esta imagen muestra los relés de seguridad de la máquina de pintura.
+El relé de schmersal, por coincidencia podría ser el que controle el enclavamiento de la puerta de la cabina y el de schneider el relé de emergencias.
+La cabina de pintura es un espacio clasificado atex, por lo que es probable que el enclavamiento sea Atex y por eso no le han seriado con las emergencias porque puede que necesite un relé que admita señales intrinsicamente seguras.
