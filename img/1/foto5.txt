@@ -1,0 +1,4 @@
+Detalle de la barrera de luz que guarda la zona de acceso a la máquina. 
+Esta barera de luz para todo.
+Esta ubicada a una altura de unos 350 mm del suelo y es un dispositivo monohaz, el receptor es un perfil con espejos que devuelve el haz a este mismo equipo.
+El año de fabricación de la línea es 2007.

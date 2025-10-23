@@ -1,0 +1,3 @@
+Detalle de parte de las barreras de luz en zonas de acceso a máquina y transporte de salida.
+La que se ve más cerca rebotaría el haz hacia la izquierda al dispositivo que se ve en el punto 5. 
+La que se ve más al fondo, más cerca de los rodillos de salida de la sierra, enviaría el haz hacia la derecha al dispositivo que estaría bajo el soporte que se ve en la foto 6.

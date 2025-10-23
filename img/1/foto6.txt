@@ -1,0 +1,4 @@
+Detalle del perfil de recepción y rebote de la barrera de luz de los transportadores de salida.
+PELIGRO: El cerramiento termina justo en el soporte de esta barrera, no dejando espacio en la altura del soporte para pasar. Sin embargo el soporte está bajo a 500 mm como mucho del suelo por lo que se podría pasar por encima incluso apoyandose en el propio soporte.
+
+INFORMACIÓN: La tornillería de los cerramientos es mediante tornillo y tuerca con cabeza hexagonal.

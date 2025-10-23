@@ -6,9 +6,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const sections = {
     1: [
-      { top: "50%", left: "5%", media: "img/1/foto1.jpg", desc: "img/1/foto1.txt" , type:"visual"},
-      { top: "80%", left: "42%", media: "img/1/foto2.jpg", desc: "img/1/foto2.txt" , type:"visual"},
-      { top: "78%", left: "60%", media: "media/1/video1.mp4", desc: "media/1/video1.txt",type:"visual" }
+      { top: "50%", left: "5%", media: "img/1/foto1.jpg", desc: "img/1/foto1.txt" , type:"visual"},//1.panoramica linea desde inicio
+      { top: "80%", left: "42%", media: "img/1/foto2.jpg", desc: "img/1/foto2.txt" , type:"visual"},//2.panorámica de salida
+      { top: "78%", left: "60%", media: "media/1/video1.mp4", desc: "media/1/video1.txt",type:"visual" },//3.video salida material y corte
+      { top: "20%", left: "35%", media: "img/1/foto3.jpg", desc: "media/1/foto3.txt",type:"danger" },//4.detalle puerta
+      { top: "78%", left: "55%", media: "img/1/foto4.jpg", desc: "media/1/foto4.txt",type:"info" }, //5.detalle barreras lus máquina y transporte
+      { top: "62%", left: "42%", media: "img/1/foto5.jpg", desc: "media/1/foto5.txt",type:"info" }, //6.detalle barrera de luz máquina
+      { top: "62%", left: "90%", media: "img/1/foto6.jpg", desc: "media/1/foto6.txt",type:"danger" },//7.detalle cierre al final de linea
+      { top: "20%", left: "45%", media: "img/1/foto7.jpg", desc: "media/1/foto7.txt",type:"info" }, //8.detalle relé de seguridad transporte
+      { top: "78%", left: "50%", media: "img/1/foto8.jpg", desc: "media/1/foto8.txt",type:"info" }, //8.detalle relé de seguridad sierra
+
       
     ],
     2: [

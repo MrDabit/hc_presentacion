@@ -1,0 +1,2 @@
+Vista de los relés de seguridad que se encuentran ubicados en el pupitre de control. 
+El pupitre de control dispone de una seta de emergencia y las capotas de la sierra de cinta que guardan las poleas que arrastran la cinta tienen un enclavamiento.
