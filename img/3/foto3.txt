@@ -1,0 +1,2 @@
+Esta imagen muestra la zona de las máquinas de procesado. 
+El material es empujado a las cotas en las que se realizarán los procesos de taladrado para espesores grandes, punzonado, punzonado de ala vertical para los perfiles angulares, y cizallado de llantas o de ángulos según el material que se está procesando. 

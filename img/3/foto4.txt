@@ -1,0 +1,2 @@
+Esta imagen muestra la zona de salida de material.
+A partir del proceso corte por cizallado, el material es empujado a esta mesa que tiene un movimiento longitudinal para acercarse y alejarse de la cizalla y un empujador transversal para expulsar el material.

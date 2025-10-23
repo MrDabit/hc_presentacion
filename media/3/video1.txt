@@ -1,0 +1,6 @@
+Este video muestra un paseo a lo largo de la línea. Comenzando desde la entrada y recorriendo la línea desde el lado de carga y del operario.
+La línea se fabrico y se montón en 2006. 
+Esta compuesta por un transporte de entrada mediante transportadores transversales que llevan el material a la zona de empuje.
+El empujador empuja el material hasta la zona de las máquinas y va posicionandose en las cotas donde se realizan los taladros, el punzonado o el corte por medio de las cizallas.
+La cizalla es doble y se posiciona dependiendo de si corta llantas o si corta ángulos.
+Finalmente la mesa de salida se acerca a la cizalla para recoger el material cortado y a continuación se separa de la cizalla y empuja el material transversalmente.

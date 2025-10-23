@@ -1,0 +1,1 @@
+Detalle del pilar con el emisor o receptor que progeje el acceso a la zona de entrada.

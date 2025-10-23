@@ -35,13 +35,27 @@ document.addEventListener("DOMContentLoaded", () => {
       { top: "55%", left: "55%", media: "img/2/foto12.jpg", desc: "img/2/foto12.txt", type:"info" },//14.Detalle barrera de luz zona descarga
       { top: "60%", left: "58%", media: "img/2/foto13.jpg", desc: "img/2/foto13.txt", type:"info" },//15.Detalle dispositivo barrera de luz zona de descarga
       { top: "85%", left: "80%", media: "img/2/foto14.jpg", desc: "img/2/foto14.txt", type:"info" },//16.Relé seguridad sierra
-      { top: "85%", left: "85%", media: "img/2/foto15.jpg", desc: "img/2/fot15.txt", type:"info" },//17.Relé seguridad marcadora
+      { top: "85%", left: "85%", media: "img/2/foto15.jpg", desc: "img/2/foto15.txt", type:"info" },//17.Relé seguridad marcadora
       { top: "85%", left: "90%", media: "img/2/foto16.jpg", desc: "img/2/foto16.txt", type:"info" },//18.Relés de seguridad transporte
       { top: "85%", left: "95%", media: "img/2/foto17.jpg", desc: "img/2/foto17.txt", type:"info" }//19.Relés seguridad taladro
     ],
 
     3: [
-      { top: "35%", left: "45%", media: "img/3/foto3.jpg", desc: "img/3/foto3.txt" }
+      { top: "53%", left: "5%", media: "media/3/video1.mp4", desc: "media/3/video1.txt", type:"visual" },//1.Paseo por la línea por el lado del operario
+      { top: "20%", left: "10%", media: "media/3/video2.mp4", desc: "media/3/video2.txt", type:"visual" },//2.Paseo por la línea por detrás, hasta cuadros
+      { top: "20%", left: "50%", media: "media/3/video3.mp4", desc: "media/3/video3.txt", type:"visual" },//3.Paseo por la línea por detrás tras acceder por puerta
+      { top: "65%", left: "5%", media: "img/3/foto1.jpg", desc: "img/3/foto1.txt", type:"visual" },//4.Panoramica desde la entrada de material
+      { top: "35%", left: "3%", media: "img/3/foto2.jpg", desc: "img/3/foto2.txt", type:"visual"},//5.Vista desde entrada, cierre de empujador
+      { top: "70%", left: "45%", media: "img/3/foto3.jpg", desc: "img/3/foto3.txt", type:"visual" },//6.Vista de zona de máquinas de procesado
+      { top: "65%", left: "75%", media: "img/3/foto4.jpg", desc: "img/3/foto4.txt", type:"visual" },//7.Vista de mesa de salida de material
+      { top: "35%", left: "90%", media: "img/3/foto5.jpg", desc: "img/3/foto5.txt", type:"danger" },//8.Puerta en calle sin enclavamiento
+      { top: "43%", left: "55%", media: "img/3/foto6.jpg", desc: "img/3/foto6.txt" , type:"danger"},//9.Riesgo de acceso a maquinas desde salida trepando
+      { top: "43%", left: "65%", media: "img/3/foto7.jpg", desc: "img/3/foto7.txt" , type:"danger"},//10. Riesgo de acceso a máquinas agachado por salida
+      { top: "45%", left: "10%", media: "img/3/foto8.jpg", desc: "img/3/foto8.txt" , type:"info"},//11.Detalle barrera de luz entrada
+      { top: "73%", left: "40%", media: "img/3/foto9.jpg", desc: "img/3/foto9.txt", type:"info" },//12.Detalle espejo barrera luz entrada
+      { top: "55%", left: "37%", media: "img/3/foto10.jpg", desc: "img/3/foto10.txt" , type:"info"},//13.Detalle barrera de luz máquinas
+      { top: "65%", left: "55%", media: "img/3/foto11.jpg", desc: "img/3/foto11.txt", type:"info" },//14.Detalle espejo barrera luz máquinas
+      { top: "45%", left: "37%", media: "img/3/foto12.jpg", desc: "img/3/foto12.txt" , type:"info"},//15.Detalle receptor barrera luz máquinas
     ],
     4: [
       { top: "25%", left: "55%", media: "img/4/foto4.jpg", desc: "img/4/foto4.txt" }

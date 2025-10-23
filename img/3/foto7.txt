@@ -1,0 +1,2 @@
+Vemos el detalle de la salida de la máquina.
+PELIGRO: Se podría atravesar por la barrera de luz de la salida, que para la mesa de recepción y evacuación de material, pero por debajo de esta mesa podríamos acceder a toda la parte trasera de las máquinas de procesado, sin parar estas máquinas.

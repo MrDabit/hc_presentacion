@@ -1,0 +1,1 @@
+Detalle del pilar que contiene el emisor o receptor de la barrera de luz que proteje la zona de entrada.
